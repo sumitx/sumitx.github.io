@@ -39,10 +39,10 @@ function handleResponse(data) {
 
 
 function handleGif(conditions){
-	console.log(conditions);
+	// console.log(conditions);
 	$.get("http://api.giphy.com/v1/gifs/search?q=" + conditions + "&api_key=dc6zaTOxFJmzC", function(data, status) {
-		console.log(data.data.length);
-		console.log(data.data[0]);
+		// console.log(data.data.length);
+		// console.log(data.data[0]);
 		var maxLength = data.data.length - 1;
 
 		var rand = Math.floor((Math.random() * maxLength) + 1);
@@ -75,7 +75,7 @@ function refreshGif(){
 $('.input').on("click", function (event) {
 	// console.log($('#zip-code').val());
 	zipCode = $('#zip-code').val();
-	console.log(zipCode);
+	// console.log(zipCode);
 	getWeather();
 	refreshGif();
 });
