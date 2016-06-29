@@ -25,11 +25,11 @@ function handleResponse(data) {
 	// console.log("current temp: " + tempInF);
 	// console.log("conditions: " + data.list[0].weather[0].description);
 	$content.empty();
-	$content.append("City: " + data.city.name + "<br>");
+	$content.append("<h1>Here's the weather for " + data.city.name + "<br></h1>");
 
-	$content.append("Temperature: " + tempInF + "<br>");
+	$content.append("<h2>Temperature: " + tempInF + "</h2><br>");
 	conditions =  data.list[0].weather[0].description;
-	$content.append("Conditions: " + conditions + "<p>");
+	$content.append("<h4>Conditions: " + conditions + "</h4><br>");
 	conditions = conditions.split(' ').join('+')
 	
 	//now do the gif interaction
@@ -42,11 +42,12 @@ function handleGif(conditions){
 	console.log(conditions);
 	$.get("http://api.giphy.com/v1/gifs/search?q=" + conditions + "&api_key=dc6zaTOxFJmzC", function(data, status) {
 		console.log(data.data.length);
+		console.log(data.data[0]);
 		var maxLength = data.data.length - 1;
 
 		var rand = Math.floor((Math.random() * maxLength) + 1);
 
-		$content.append("<div id='image'><img src=" + data.data[rand].images.downsized.url + "></div>");
+		$content.append("<div id='image'><img src=" + data.data[rand].images.original.url + "></div>");
 
 	});
 }
