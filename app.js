@@ -7,7 +7,7 @@ var zipCode = 11377;
 
 
 function getWeather() {
-	sourceURL = "https://api.openweathermap.org/data/2.5/forecast/weather?zip=" + zipCode + ",us&units=metric&APPID=" + weatherAPIKey
+	sourceURL = "http://api.openweathermap.org/data/2.5/forecast/weather?zip=" + zipCode + ",us&units=metric&APPID=" + weatherAPIKey
 
 	$.ajax({
 		method: 'GET',
