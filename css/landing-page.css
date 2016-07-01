@@ -61,6 +61,29 @@ h6 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
+.zip-code,
+.zip-code-button {
+    min-height: 30px;
+}
+
+#temperature-background--freezing {
+    background-color: lightblue;
+}
+
+#temperature-background--cold {
+    background-color: cornflowerblue;
+}
+
+#temperature-background--warm {
+    background-color: salmon;
+}
+
+#temperature-background--hot {
+    background-image: url(https://cdn.cloudpix.co/images/sunny/sunny-day-wallpaper-weather-67eb048e101364cb35a5e03504acb949-large-533645.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 @media(max-width:767px) {
     .intro-message {
         padding-bottom: 15%;
@@ -101,6 +124,7 @@ h6 {
     padding: 50px 0;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
+    transition: background-image 200ms ease-in-out;
 }
 
 .section-heading {
