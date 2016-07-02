@@ -67,19 +67,28 @@ h6 {
 }
 
 #temperature-background--freezing {
-    background-color: lightblue;
+  /*  background-color: lightblue;*/
+    background-image: url(http://wallpoper.com/images/00/36/09/29/antartica_00360929.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 #temperature-background--cold {
-    background-color: cornflowerblue;
+ /*   background-color: cornflowerblue;*/
+    background-image: url(https://c2.staticflickr.com/6/5517/12654520603_6e8211d4c8_b.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 #temperature-background--warm {
-    background-color: salmon;
+    /*background-color: salmon;*/
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b2/AT_-_Franconia_Ridge.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 #temperature-background--hot {
-    background-image: url(https://cdn.cloudpix.co/images/sunny/sunny-day-wallpaper-weather-67eb048e101364cb35a5e03504acb949-large-533645.jpg);
+    background-image: url(http://dreamatico.com/data_images/desert/desert-5.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
